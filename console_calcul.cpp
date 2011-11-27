@@ -29,7 +29,7 @@ void console_calcul()
     //fin presentation
     do
     {
-        cout << "$ ";
+        cout << "# ";
         cin >> command_line;
         decryptage(command_line);
 

@@ -39,7 +39,12 @@ int main()
         switch(choix_menu)
         {
             case 1 : console_calcul(); break;
-            case 2 : cout << "Affichage de help.txt"<<endl; break;
+            case 2 :
+            {
+                cout << "Affichage de help.txt"<<endl;
+                boucle_menu=1;
+                break;
+            }
             case 3 :
             {
                 cout << "Fait par : Frédéric Campo. Ce travail est mis à disposition"<<endl;
