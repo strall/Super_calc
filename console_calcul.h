@@ -14,16 +14,8 @@
 #include <fstream>
 #include <string>
 
-<<<<<<< HEAD
-
-using namespace std;
-
-void console_calcul();
-void decryptage(string command_line);
-=======
 
 using namespace std;
 
 void console_calcul();
 void decryptage(string command_line,int *quit);
->>>>>>> Ajout d'une option pour quitter

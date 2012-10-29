@@ -1,0 +1,8 @@
+#### On vire les dossiers et leurs contenus
+bin
+obj
+bin/*
+obj/*
+#### On vire les documents générés par code::blocks
+
+*.cbp

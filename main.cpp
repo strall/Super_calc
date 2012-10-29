@@ -3,11 +3,7 @@
 *Projet  : Calculatrice intelligente
 *Une calculatrice qui reconnait dynamiquement
 *les chaines de calculs tapés par l'utilisateur
-<<<<<<< HEAD
-*Version : 0.1 (non fonctionnel)
-=======
 *Version : 0.2 (non fonctionnel)
->>>>>>> Ajout d'une option pour quitter
 *TODO:
 *   - Opérations de base
 *   - Calculs d'équations a plusieurs variables
