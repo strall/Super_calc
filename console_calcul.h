@@ -8,6 +8,7 @@
 *   - Opérations de base
 *   - Calculs d'équations a plusieurs variables
 *   - Calculs de complexes
+*   - Error Manager
 *************************************************/
 
 #include <iostream>

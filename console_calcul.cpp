@@ -8,6 +8,7 @@
 *   - Opérations de base
 *   - Calculs d'équations a plusieurs variables
 *   - Calculs de complexes
+*   - Error Manager
 *************************************************/
 
 #include <iostream>
@@ -24,7 +25,7 @@ void console_calcul()
     //declaration des variables utilisées
     int quit=0;
     string command_line;
-    int *point_quit=&quit;
+    int *point_quit=&quit; //pointeur pour la fonction decryptage
     //presentation
     cout<<"Bienvenue dans la console"<<endl;
     cout<<"Pour avoir les commandes disponibles, tapez !help"<<endl;
@@ -40,23 +41,29 @@ void console_calcul()
 
 void decryptage(string command_line, int *quit)
 {
-    int i=0,j=0,type_calcul=0; //type_calcul => si 0 addition, 1 soustraction, 2 multiplication, 3 division
-    bool command=false;
-    j=command_line.length();
+    //déclaration des variables
+    int i=0,j=command_line.length(),type_calcul=0;
+    /*
+    type_calcul => si 0 addition, 1 : soustraction, 2 : multiplication, 3 : division [En tous cas, on va commencer comme ca]
+    j => je pense que la valeur d'initialisation est assez parlante. Servira dans des boucles while.
+    i => Valeur pour while
+    */
+    //Debut de la fonction. On commence par checker si le string est une commande.
     if (command_line[0]=='!')
     {
-        if (command_line.find("quit")==1)
+        if (command_line.find("quit")==1&&command_line.find_last_not_of("quit")==0) //Fonction quitter implémentée
         {
            *quit=1;
+           cout<<endl<<"Au revoir !"<<endl;
+        }
+        else
+        {
+            cout<<"Envoi dans le mode commandes !!"<<endl;
         }
 
-        cout<<"Envoi dans le mode commandes !!"<<endl;
-        //command=true;
-        /*Premier test, histoire de savoir si on a affaire a une commande user ou pas.*
-         *Celle-ci seront implémentées une autre fois                                 */
-
     }
-    if(command==false)//Mode Calcul
+
+    else//Mode Calcul et on fait péter le parser !
     {
         ;
     }

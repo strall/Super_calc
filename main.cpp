@@ -8,6 +8,7 @@
 *   - Opérations de base
 *   - Calculs d'équations a plusieurs variables
 *   - Calculs de complexes
+*   - Error Manager
 *************************************************/
 //Directives de préprocesseur
 
@@ -48,7 +49,7 @@ int main()
                 break;
             }
 
-            case 4 : cout << "appel de fonction"<<endl; break;
+            case 4 : break;
             default :
             {
                 cout<<"Ce choix n'existe pas. Veuillez entrer une valeur valide."<<endl;
