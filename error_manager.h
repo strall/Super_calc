@@ -10,16 +10,3 @@
 *   - Calculs de complexes
 *   - Error Manager
 *************************************************/
-
-#include <iostream>
-#include <fstream>
-#include <string>
-#include "liste_chainee.h"
-
-
-using namespace std;
-
-void console_calcul();
-void decryptage(string command_line,int *quit);
-void parser(string command_line);
-

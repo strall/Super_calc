@@ -1,16 +1,16 @@
 /************************************************
-*Auteur  : FrÃ©dÃ©ric Campo
+*Auteur  : Frédéric Campo
 *Projet  : Calculatrice intelligente
 *Une calculatrice qui reconnait dynamiquement
-*les chaines de calculs tapÃ©s par l'utilisateur
+*les chaines de calculs tapés par l'utilisateur
 *Version : 0.2 (non fonctionnel)
 *TODO:
-*   - OpÃ©rations de base
-*   - Calculs d'Ã©quations a plusieurs variables
+*   - Opérations de base
+*   - Calculs d'équations a plusieurs variables
 *   - Calculs de complexes
 *   - Error Manager
 *************************************************/
-//Directives de prÃ©processeur
+//Directives de préprocesseur
 
 #include <iostream>
 #include <fstream>
@@ -18,18 +18,18 @@
 #include "console_calcul.h"
 
 using namespace std;
-//PrÃ©sentation graphique
+//Présentation graphique
 
-int main()
+int main(int argc, char *argv[])
 {
-    //DÃ©claration des variables
+    //Déclaration des variables
     int boucle_menu=0,choix_menu=0;
     //Code principal
-    cout << "Calculat0r par FrÃ©dÃ©ric Campo ; Feedback : <strall@digeatit.com>"<<endl;
+    cout << "Calculat0r par Frédéric Campo ; Feedback : <strall@digeatit.com>"<<endl;
     cout << "Menu principal :"<<endl<<"Que souhaitez vous faire?"<<endl;
     cout << "1 : Passer dans la console de calcul"<<endl;
     cout << "2 : Aide"<<endl;
-    cout << "3 : CrÃ©dits"<<endl;
+    cout << "3 : Crédits"<<endl;
     cout << "4 : Quitter"<<endl;
     do
     {
@@ -40,11 +40,11 @@ int main()
         switch(choix_menu)
         {
             case 1 : console_calcul(); break;
-            case 2 : cout << "Affichage de help.txt"<<endl; break;
+            case 2 : cout << "Affichage de help.txt"<<endl; boucle_menu=1; break;
             case 3 :
             {
-                cout << "Fait par : FrÃ©dÃ©ric Campo. Ce travail est mis Ã  disposition"<<endl;
-                cout << "selon les termes de la Licence Creative Commons :"<<endl<<"Attribution - Pas dâ€™Utilisation Commerciale - Pas de Modification 2.0 France."<<endl;
+                cout << "Fait par : Frédéric Campo. Ce travail est mis à disposition"<<endl;
+                cout << "selon les termes de la Licence Creative Commons :"<<endl<<"Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.0 France."<<endl;
                 boucle_menu=1;
                 break;
             }
